@@ -1,0 +1,40 @@
+.cricket-container {
+  width: 100%;
+  height: 600px;
+  font-family: bold;
+  color: rgb(1, 1, 1);
+  position: relative;
+}
+.cricket-container img{
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+  height: 660px;
+}
+.Game {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 37%;
+}
+button {
+  height: 30px;
+  width: 55px;
+  border: 1.5px solid rgb(134, 131, 131);
+  border-radius: 5px;
+  font-family: cursive;
+  font-size: 15px;
+}
+button:hover {
+  color: #747272;
+}
+h4 {
+  color: rgba(12, 12, 12, .8)
+}
+.resetBtn {
+  color: rgb(49, 151, 247);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid rgb(134, 131, 131);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="cricket-container">
+        <img src="image/bat-stamp.png" alt="">
+      <div class="Game">
+        <h1>Bat Ball Stump Game</h1>
+        <button
+          onclick="generateComputerChoice();
+            result('Bat',computerChoice);
+            showResult('Bat',computerChoice,resultMsg);"
+        >
+          Bat
+        </button>
+
+        <button
+          onclick="generateComputerChoice();
+            result('Ball',computerChoice);
+            showResult('Ball',computerChoice,resultMsg);"
+        >
+          Ball
+        </button>
+
+        <button
+          onclick=" generateComputerChoice();
+            result('Stump',computerChoice);
+            showResult('Stump',computerChoice,resultMsg);
+            "
+        >
+          Stump
+        </button>
+
+        <button
+          class="resetBtn"
+          onclick="localStorage.clear();
+            resetScore(scoreStr);
+            showResult();
+            "
+        >
+          Reset
+        </button>
+
+        <div>
+          <h4 id="userData"></h4>
+          <h4 id="computerData"></h4>
+          <h4 id="showResult"></h4>
+          <h4 id="score"></h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
